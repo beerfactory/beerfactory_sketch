@@ -21,36 +21,38 @@
   <body>
     <div id="root">
       <div data-reactroot="" class="ui vertical center aligned">
-        <div class="ui fixed menu"><a href="http://localhost:9000/" class="header item"><img
-              src="/assets/images/logo.png" class="GlobalStyles-imgLogo ui image">Beerfactory</a>
+        <div class="ui fixed menu">
+          <a href="http://localhost:9000/" class="header item"><img
+            src="images/logo.png" class="GlobalStyles-imgLogo ui image">Beerfactory</a>
           <div class="right menu">
-            <div class="item"><a href="http://localhost:9000/" class="ui inverted basic blue button">Register</a></div>
-            <div class="item"><a href="http://localhost:9000/" class="ui inverted basic blue button">Login</a></div>
+            <div class="item"><a href="http://localhost:9000/" class="ui green basic button">Register</a></div>
+            <div class="item"><a href="http://localhost:9000/" class="ui blue button">Login</a></div>
           </div>
         </div>
         <div class="GlobalStyles-mainContainer ui container">
-          <div class="ui one column middle aligned center aligned grid">
-            <div>
-              <form class="ui large form">
-                <div class="ui stacked segment">
+          <div class="ui three column centered grid">
+          <div class="row">
+              <form class="ui column large form">
+                <div class="ui segment">
                   <div class="field">
                     <div class="ui left icon input"><input name="username" placeholder="Username"></div>
                   </div>
                   <div class="field">
                     <div class="ui left icon input"><input name="password" placeholder="Username"></div>
+                    <div style="text-align: right;"><small><a href="#">Forgot password ?</a></small></div>
                   </div>
-                  <div class="ui fluid large teal button">Login</div>
+                  <div class="ui fluid large blue button">Login</div>
                 </div>
               </form>
-            </div>
-            <div>Test</div>
           </div>
-        </div>
-        <div class="ui inverted vertical segment">
-          <div class="ui right aligned segment">Version xxx</div>
+          <div class="row">
+            <div class="column">
+              <div class="ui center aligned segment">New to Beerfactory? <a href="">Create an account</a>.</div>
+          </div>
         </div>
       </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"</script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
   </body>
 </html>
